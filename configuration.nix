@@ -165,6 +165,7 @@
     alacritty
     curl 
     fastfetch
+    gcc
     git
     neovim 
     vlc
