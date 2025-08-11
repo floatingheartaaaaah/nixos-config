@@ -23,6 +23,8 @@ in
 	bat
 	nitrogen
 	chromium
+	python3
+	rustup
 	rofi
 	polybar
 	spotify
