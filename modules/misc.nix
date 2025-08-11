@@ -5,6 +5,6 @@
 {
 	programs = {
 		# ssh configuration for user 
-		ssh.enable = true ;
+	#	ssh.enable = true ;
 	};
 }

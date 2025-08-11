@@ -7,7 +7,7 @@
 {
   imports =
     [ # Imports for hardware , home-manager and stylix.
-      ./hardware-configuration.nix
+      /etc/nixos/hardware-configuration.nix
       inputs.home-manager.nixosModules.default
       inputs.stylix.nixosModules.stylix
     ];
