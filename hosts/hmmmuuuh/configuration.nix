@@ -7,7 +7,7 @@
 {
   imports =
     [ # Imports for hardware , home-manager and stylix.
-      /etc/nixos/hardware-configuration.nix
+      /etc/nixos/hosts/hmmmuuuh/hardware-configuration.nix
       inputs.home-manager.nixosModules.default
       inputs.stylix.nixosModules.stylix
     ];
@@ -165,7 +165,6 @@
     alacritty
     curl 
     fastfetch
-    gcc
     git
     neovim 
     vlc

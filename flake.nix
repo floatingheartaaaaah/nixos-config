@@ -23,7 +23,7 @@
     nixosConfigurations.hmmmuuuh = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs dotsDir; };
       modules = [
-        ./configuration.nix
+        ./hosts/hmmmuuuh
       ];
     };
   };

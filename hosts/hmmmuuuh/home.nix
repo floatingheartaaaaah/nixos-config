@@ -7,7 +7,7 @@ in
 { 
   #import the user configured applications
   imports = [
-	./modules
+	../../modules
   ];
 
   home.username = "hmmmaaah";
@@ -24,6 +24,8 @@ in
 	nitrogen
 	chromium
 	python3
+	gcc
+	clang-tools
 	rustup
 	rofi
 	polybar
