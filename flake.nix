@@ -14,7 +14,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, stable-nixpkgs, ... } @ inputs:
+  outputs = { self, nixpkgs, stable-nixpkgs, home-manager , ... } @ inputs:
   let
     pkgs = nixpkgs.legacyPackages.x86_64-linux;
     stable-pkgs = stable-nixpkgs.legacyPackages.x86_64-linux;
@@ -26,5 +26,13 @@
         ./hosts/hmmmuuuh
       ];
     };
+
+    homeConfigurations."kali" = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+	specialArgs = { inherit inputs dotsDir; };
+        modules = [ ./hosts/kali ];
+
+      };
+
   };
 }

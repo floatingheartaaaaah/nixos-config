@@ -7,5 +7,5 @@
      ../../dots/home-manager-skeleton.nix
   ];
    user.enable = true ;
-   user.username = "hmmmaaah";
+   user.username = "ik";
 }
