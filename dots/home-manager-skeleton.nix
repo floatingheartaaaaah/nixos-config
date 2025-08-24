@@ -26,7 +26,7 @@ in
     home.packages = with pkgs; [
       xclip tree cmatrix btop fnm bat nitrogen chromium python3 gcc
       clang-tools rustup rofi polybar neovim vim wget alacritty curl
-      fastfetch git vlc ripgrep tmux
+      fastfetch git vlc ripgrep tmux go
     ];
 
     editorconfig.enable = true;

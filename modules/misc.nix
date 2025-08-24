@@ -1,10 +1,11 @@
-{config , pkgs , ...}:
-
-
+{ config, pkgs, dotsDir, lib, ... }:
 
 {
-	programs = {
-		# ssh configuration for user 
-	#	ssh.enable = true ;
-	};
+
+  # file symlinking for ssh config 
+  home.file."${configDir}/.ssh/config" = {
+    enable = true;
+    source = lib.mkForce "${dotsDir}/ssh.config";
+  };
 }
+
